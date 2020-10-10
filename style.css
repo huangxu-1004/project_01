@@ -1,0 +1,858 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.w {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('font/iconfont.eot');
+    src: url('font/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('font/iconfont.woff2') format('woff2'),
+        url('font/iconfont.woff') format('woff'),
+        url('font/iconfont.ttf') format('truetype'),
+        url('font/iconfont.svg#iconfont') format('svg');
+}
+
+body {
+    background-color: #f2f3f4;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #6c6c6c;
+
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* 顶部 */
+.top_nav {
+    height: 25px;
+    line-height: 25px;
+    background-color: #f2f2f2;
+}
+
+.top_nav li {
+    float: left;
+}
+
+.tel::before {
+    content: "\e61a";
+    font-family: 'iconfont';
+    color: #fec715;
+
+}
+
+.top_nav .fr li {
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.top_nav .fr li::after {
+    content: "\e61b";
+    font-family: 'iconfont';
+}
+
+/* logo */
+.top-two {
+    overflow: hidden;
+    height: 90px;
+}
+
+.top-two .logo img {
+    width: 120px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.serch {
+    margin: 20px 0 0 110px;
+    box-sizing: border-box;
+    width: 565px;
+    height: 60px;
+}
+
+.serch input {
+    float: left;
+    height: 35px;
+    width: 475px;
+    border: 1px solid #fec715;
+    border-right: none;
+}
+
+.serch button {
+    float: left;
+    width: 89px;
+    height: 37px;
+    background-color: #fec715;
+    border: none;
+}
+
+.serch a {
+    display: inline-block;
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    color: #fca500;
+}
+
+.serch a:hover {
+    background-color: #fec715;
+    color: #ffffff;
+}
+
+.kefu {
+    width: 142px;
+    height: 25px;
+    margin: 40px 20px 0 0;
+}
+
+.kefu a {
+    font-size: 16px;
+    background-color: #fca500;
+    color: #ffffff;
+    padding: 0 10px;
+}
+
+.kefu span::before {
+    content: "\e61a";
+    font-family: 'iconfont';
+    color: #fec715;
+}
+
+/* 导航栏 */
+section {
+    height: 37px;
+    background-color: #fec715;
+    line-height: 37px;
+}
+
+section li,
+section span {
+    float: left;
+
+}
+
+section li a {
+    display: inline-block;
+    height: 37px;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #3d3d3d;
+}
+
+/* 广告 */
+.banner {
+    height: 305px;
+    margin-top: 7px;
+}
+
+.banner .fl {
+    width: 690px;
+    height: 100%;
+    border-right: 1px solid #e1e1e1;
+}
+
+.banner .fl .subnav {
+    float: left;
+    width: 90px;
+    height: 100%;
+    background-color: #3d3d3d;
+}
+
+.banner .fl .subnav li {
+    height: 45px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.banner .fl .subnav li:hover {
+    background-color: #ffffff;
+    color: #6c6c6c;
+}
+
+.banner .fl .box {
+    box-sizing: border-box;
+    float: left;
+    width: 595px;
+    height: 100%;
+}
+
+.banner .fl .box1 {
+    overflow: hidden;
+    height: 45px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.banner .fl .box1 li {
+    position: relative;
+    float: left;
+
+}
+
+.banner .fl .box1 li a {
+    display: inline-block;
+    height: 45px;
+    padding: 0 10px;
+    line-height: 45px;
+}
+
+.banner .fl .box1 li .hot::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    background-image: url(imgs/H.png);
+}
+
+.banner .fl .box1 li a:hover {
+    border-bottom: 3px solid #fca500;
+}
+
+.banner .fl .box2 {
+    height: 45px;
+    ;
+    line-height: 45px;
+}
+
+.banner .fl .box2 .box2-l {
+    float: left;
+
+}
+
+.banner .fl .box2 .box2-r {
+    float: right;
+}
+
+.banner .fl .box2 .box2-r a {
+    font-size: 14px;
+    color: #f39b02;
+}
+
+.banner .fl .box3 {
+    height: 130px;
+}
+
+.banner .fl .box3 .four {
+    float: left;
+
+}
+
+.banner .fl .box3 .four:nth-child(even) {
+    margin-left: 30px;
+}
+
+.banner .fl .box3 .four input {
+    width: 260px;
+    height: 30px;
+    color: #c7d1e4;
+    border-radius: 5px;
+}
+
+.banner .fl .box4 {
+    height: 60px;
+}
+
+.banner .fl .box4 img {
+    float: left;
+    width: 180px;
+    height: 30px;
+    margin: 15px 0 0 10px;
+}
+
+.banner .fl .box4 button {
+    float: right;
+    width: 160px;
+    height: 30px;
+    background-color: #ffc300;
+    border: none;
+    margin: 15px 10px 0 0;
+}
+
+.banner .fl .box5 {
+    height: 25px;
+    background-color: #f2f3f4;
+}
+
+
+.banner .fl .box5 ul li {
+    float: left;
+    font-size: 12px;
+    line-height: 30px;
+    padding: 0 5px;
+}
+
+.banner .fr {
+    width: 495px;
+    height: 300px;
+
+}
+
+/* 飞猪特卖 */
+.article {
+    height: 50px;
+    line-height: 50px;
+}
+
+.article .fl .feizhu {
+    position: relative;
+    margin: 0 40px;
+}
+
+.article .fl .feizhu::before {
+    content: "";
+    width: 36px;
+    height: 32px;
+    background-image: url(imgs/sprites.png);
+    background-position: 0 -11px;
+    position: absolute;
+    top: 0px;
+    left: -35px;
+}
+
+/* 北京 */
+.bj {
+    height: 25px;
+    margin: 20px auto;
+}
+
+.bj .fl ul li {
+    position: relative;
+    float: left;
+}
+
+.bj .fl ul li a {
+    padding: 0 10px;
+    color: #000000;
+
+}
+
+.bj .fl ul li a:hover {
+    background-color: #f39b02;
+}
+
+.bj .fr a,
+.article .fr .left {
+    position: relative;
+    margin-right: 30px;
+}
+
+.left::after {
+    content: "";
+    position: absolute;
+    background-image: url(imgs/left-arrow.png);
+    top: 0;
+    left: 60px;
+    width: 24px;
+    height: 24px;
+}
+
+.line::before {
+    content: "";
+    position: absolute;
+    background-image: url(imgs/line.png);
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 20px;
+}
+
+
+/* 票价 */
+.price {
+    height: 150px;
+}
+
+.price ul li,
+.play .play-bom ul li {
+    box-sizing: border-box;
+    float: left;
+    width: 230px;
+    height: 70px;
+    background-color: #fbfbfb;
+    margin: 0 8px 8px 0;
+    padding: 10px;
+}
+
+.price ul li .two,
+.play .play-bom ul li .two {
+    margin-top: 5px;
+}
+
+.price ul li .two span,
+.play .play-bom ul li .two span {
+    font-size: 12px;
+}
+
+.price ul li .two strong,
+.play .play-bom ul li .two strong {
+    color: #f39b02;
+    font-size: 16px;
+}
+
+.price ul li .two em,
+.play .play-bom ul li .two em {
+    font-style: normal;
+    font-size: 14px;
+    margin-right: 80px;
+}
+
+/* bj2 */
+.left-s::after {
+    content: "";
+    position: absolute;
+    background-image: url(imgs/left-arrow.png);
+    top: 0;
+    right: -24px;
+    width: 24px;
+    height: 24px;
+}
+
+.article .fl .chujing {
+    position: relative;
+    margin: 0 40px;
+}
+
+.article .fl .chujing::before {
+    content: "";
+    width: 32px;
+    height: 36px;
+    background-image: url(imgs/sprites.png);
+    background-position: -1px -57px;
+    position: absolute;
+    top: -11px;
+    left: -35px;
+}
+
+/* 出境游 */
+.list {
+    background-color: #fff;
+    height: 640px;
+    margin: 15px auto;
+}
+
+.list .out,
+.hotel .out,
+.play .out {
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fbfbfb;
+}
+
+.out .fl a {
+    display: inline-block;
+    height: 47px;
+}
+
+.out .fl a:hover {
+    border-bottom: 2px solid #fca500;
+}
+
+.out .fl span {
+    position: relative;
+    margin: 0 40px;
+}
+
+.out .fl .one::before {
+    content: "";
+    width: 36px;
+    height: 32px;
+    background-image: url(imgs/sprites.png);
+    background-position: -1px -57px;
+    position: absolute;
+    top: 0px;
+    left: -35px;
+}
+
+.out .fr a {
+    position: relative;
+    margin-right: 30px;
+
+}
+
+.out .fr a::after {
+    content: "";
+    position: absolute;
+    background-image: url(imgs/left-arrow.png);
+    top: 0;
+    left: 60px;
+    width: 24px;
+    height: 24px;
+}
+
+.mudi {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+}
+
+.mudi span {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.mudi a {
+    margin: 0 10px;
+    color: #ee9900;
+    font-size: 12px;
+}
+
+.mudi a:hover {
+    color: #000000;
+    background-color: #fca500;
+}
+
+.list-bom {
+    height: 530px;
+}
+
+.list-bom .fl {
+    width: 955px;
+    height: 540px;
+}
+
+.list .fl ul li {
+    position: relative;
+    float: left;
+    width: 230px;
+    height: 260px;
+    border: 1px solid #ffffff;
+    margin: 0 8px 9px 0;
+}
+
+.list .fl ul li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.list .fl ul li p {
+    margin: 15px 7px;
+    font-size: 14px;
+}
+
+.list .fl ul li strong,
+.like-bd ul li strong {
+    color: #ff9c41;
+    margin-left: 6px;
+    margin-right: 70px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.list .fl ul li span,
+.like-bd ul li span {
+    font-size: 12px;
+    color: #6c6c6c;
+}
+
+/* .list222 */
+
+.out .fl .two::before {
+    content: "";
+    width: 36px;
+    height: 32px;
+    background-image: url(imgs/sprites.png);
+    background-position: -1px -107px;
+    position: absolute;
+    top: 0px;
+    left: -35px;
+}
+
+.list-bom ul li img,
+.like-bd ul li img {
+    width: 230px;
+    height: 154px;
+}
+
+.jingnei li:nth-child(even)::after {
+    content: "曼谷";
+    width: 35px;
+    height: 20px;
+    background-color: #ffc900;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.jingnei li:nth-child(odd)::after {
+    content: "泰国";
+    width: 35px;
+    height: 20px;
+    background-color: #ffc900;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.jingwai li:nth-child(-n+4)::after {
+    content: "三亚";
+    width: 35px;
+    height: 20px;
+    background-color: #ffc900;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.jingwai li:nth-child(n+4)::after {
+    content: "亚龙湾";
+    width: 45px;
+    height: 20px;
+    background-color: #ffc900;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.mudi::after {
+    content: "";
+    position: absolute;
+    background-image: url(imgs/line.png);
+    top: 30%;
+    left: 0;
+    width: 4px;
+    height: 20px;
+}
+
+/* 酒店 */
+.hotel {
+    height: 600px;
+    background-color: #ffffff;
+}
+
+.out .fl .three::before {
+    content: "";
+    width: 36px;
+    height: 32px;
+    background-image: url(imgs/sprites.png);
+    background-position: -1px -200px;
+    position: absolute;
+    top: -7px;
+    left: -39px;
+}
+
+.hotel-box {
+    width: 1170px;
+    height: 490px;
+
+    margin: 5px 10px;
+}
+
+.hotel-box .fl {
+    width: 935px;
+    height: 485px;
+}
+
+.hotel-box .fl ul li {
+    float: left;
+    width: 227px;
+    height: 240px;
+    border: 1px solid #c7d1e4;
+    margin: 0 6px 6px 0;
+}
+
+.hotel-box .fl ul li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.hotel-box .fl ul li p {
+    margin: 5px 7px;
+}
+
+.hotel-box .fl ul li h4 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #999999;
+    margin: 5px 7px;
+}
+
+.hotel-box .fl ul li strong {
+    color: #ff5741;
+    margin-left: 7px;
+    font-weight: 400;
+}
+
+.hotel-box .fl ul li strong span {
+    color: #7f6666;
+    font-size: 14px;
+}
+
+.hotel-box .fr {
+    width: 230px;
+    height: 480px;
+}
+
+.hotel-box .fr ul li {
+    padding-left: 15px;
+    height: 155px;
+    background-color: #fafafa;
+    border-top: 5px solid #ee9900;
+}
+
+.hotel-box .fr ul li h4 {
+    font-weight: 400;
+    color: #ff5741;
+    margin: 10px 0;
+}
+
+.hotel-box .fr ul li a {
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    color: #666666;
+    font-size: 14px;
+}
+
+/* 机票 */
+.play {
+    height: 425px;
+    margin: 10px auto;
+}
+
+.out .fl .four::before {
+    content: "";
+    width: 36px;
+    height: 32px;
+    background-image: url(imgs/sprites.png);
+    background-position: -1px -252px;
+    position: absolute;
+    top: 0px;
+    left: -35px;
+}
+
+.play .mudi-s input {
+    width: 80px;
+    height: 20px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+/* .play .mudi-s input::before {
+    content: "\e61b";
+    font-family: 'iconfont';
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
+.play-bom {
+    height: 240px;
+}
+
+.play .play-tu {
+    padding: 0 20px;
+    height: 80px;
+}
+
+.play .play-tu .fl img {
+    vertical-align: bottom;
+    margin-top: 20px;
+}
+
+.play .play-tu a {
+    display: inline-block;
+    height: 56px;
+    width: 25px;
+    color: #000000;
+    line-height: 56px;
+    border: 1px solid #999999;
+    font-weight: 900;
+    font-size: 30px;
+    font-family: "宋体";
+}
+
+/* 喜欢 */
+.like {
+    height: 555px;
+    background-color: #ffffff;
+}
+
+.like .like-hd {
+    height: 50px;
+    text-align: center;
+    line-height: 55px;
+}
+
+.like .like-bd ul li {
+    float: left;
+    width: 230px;
+    height: 240px;
+    margin: 0 8px 8px 0;
+}
+
+.like-bd ul li p {
+    font-size: 12px;
+    margin: 10px 5px;
+}
+
+/* 底部 */
+.footer {
+    box-sizing: border-box;
+    height: 370px;
+    margin-top: 20px;
+    border-top: 5px solid #f39b02;
+}
+
+.about {
+    padding-top: 40px;
+    height: 150px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.about .fl dl {
+    float: left;
+    margin-left: 25px;
+    width: 230px;
+    height: 100px;
+    border-right: 1px solid #c7d1e4;
+}
+
+.about .fl dt {
+    margin-bottom: 10px;
+}
+
+.about .fl dd a {
+    font-size: 12px;
+}
+
+.footer .center {
+    height: 30px;
+    border-bottom: 1px solid #e1e1e1;
+
+    color: #3d3d3d;
+}
+
+footer p {
+    font-size: 12px;
+}
